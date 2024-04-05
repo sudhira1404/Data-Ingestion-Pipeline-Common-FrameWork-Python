@@ -1,0 +1,20 @@
+exclude src/ingest/test.py
+exclude src/config/config_file_ingestion_local
+exclude src/ingest/partition_date_eg.py
+
+exclude src/ingest/test1.py
+exclude src/ingest/test1.py
+exclude test/*
+exclude MANIFEST.in
+exclude PKG-INFO
+
+
+
+
+include src/config/config_file_ingestion
+include src/config/config_file_ingestion_bigred
+include src/config/config_file_ingestion_stage
+include src/config/config_file_ingestion_test
+include src/wrapper/file_ingest_wrapper.sh
+include src/wrapper/file_ingest_wrapper_param.sh
+include requirements.txt

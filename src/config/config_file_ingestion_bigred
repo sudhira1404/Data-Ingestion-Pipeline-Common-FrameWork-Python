@@ -1,0 +1,672 @@
+nielsen_bigred_old:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'nielsen_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: '/apps/hive/warehouse/prd_mdf_lnd.db/nielsen_sftp_filenames'
+  hdfs_sftp_filename: 'nielsen_sftp_filenames'
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/nielsen_bigred/sftp_datafiles'
+  local_datafile_regex_pattern: 'Nielsen'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/nielsen_bigred/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/nielsen_bigred/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: 'namft.nielsen.com'
+  remote_username: 'harish.chava@target.com'
+  remote_file_path: '/AdIntel_Target_Download'
+  remote_file_regex_pattern: 'Nielsen'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'nielson'
+  sub_directory: ''
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'nielsen_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'nielsen_bigred_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/nielsen_bigred'
+
+
+nielsen_bigred:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'nielsen_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: ''
+  hdfs_sftp_filename: ''
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/nielsen_bigred/sftp_datafiles'
+  local_datafile_regex_pattern: 'Nielsen'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: ''
+  local_hdfs_sftp_temp_file_path: ''
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: 'xyzmft.target.com'
+  remote_username: 'svbigred3hq01'
+  remote_file_path: '/xnielsen06/Inbox'
+  remote_file_regex_pattern: 'Nielsen'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: ''
+  sub_directory: ''
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'nielsen_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'nielsen_bigred_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/nielsen_bigred'
+
+
+NSA_bigred:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'nsa_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: ''
+  hdfs_sftp_filename: ''
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/NSA_bigred/sftp_datafiles'
+  local_datafile_regex_pattern: 'nsa|circular'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: ''
+  local_hdfs_sftp_temp_file_path: ''
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: 'mft.target.com'
+  remote_username: 'svbigred04'
+  remote_file_path: '/xnsa01/Inbox'
+  remote_file_regex_pattern: 'nsa|circular'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: ''
+  sub_directory: ''
+
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'NSA_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'NSA_bigred_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/NSA_bigred'
+
+kantar_bigred:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'kantar_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: ''
+  hdfs_sftp_filename: ''
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/kantar_bigred/sftp_datafiles'
+  local_datafile_regex_pattern: 'Kantar'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: ''
+  local_hdfs_sftp_temp_file_path: ''
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: 'xyzmft.target.com'
+  remote_username: 'svbigred07'
+  remote_file_path: '/xkantar02/Inbox'
+  remote_file_regex_pattern: 'Kantar'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: ''
+  sub_directory: ''
+
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'kantar_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'kantar_bigred_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/kantar_bigred'
+
+groupm_bigred_digitalmmo:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'groupm_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: '/apps/hive/warehouse/prd_mdf_lnd.db/groupm_digitalmmo_sftp_filenames'
+  hdfs_sftp_filename: 'groupm_digitalmmo_sftp_filenames'
+
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/groupm_bigred_digitalmmo/sftp_datafiles'
+  local_datafile_regex_pattern: ''
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/groupm_bigred_digitalmmo/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/groupm_bigred_digitalmmo/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: '54.227.191.12'
+  remote_username: 'TargetOutboundFTP'
+  remote_file_path: '/TargetOutboundFTP/digitalmmo'
+  remote_file_regex_pattern: ''
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'groupm'
+  sub_directory: ''
+
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'groupm_bigred_digitalmmo'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'groupm_bigred_digitalmmo_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/groupm_bigred_digitalmmo'
+
+groupm_bigred_printpak:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'groupm_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: '/apps/hive/warehouse/prd_mdf_lnd.db/groupm_printpak_sftp_filenames'
+  hdfs_sftp_filename: 'groupm_printpak_sftp_filenames'
+
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/groupm_bigred_printpak/sftp_datafiles'
+  local_datafile_regex_pattern: ''
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/groupm_bigred_printpak/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/groupm_bigred_printpak/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: '54.227.191.12'
+  remote_username: 'TargetOutboundFTP'
+  remote_file_path: '/TargetOutboundFTP/Printpak'
+  remote_file_regex_pattern: ''
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'groupm'
+  sub_directory: ''
+
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'groupm_bigred_printpak'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'groupm_bigred_printpak_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/groupm_bigred_printpak'
+
+groupm_bigred_spotpak:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'groupm_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: '/apps/hive/warehouse/prd_mdf_lnd.db/groupm_spotpak_sftp_filenames'
+  hdfs_sftp_filename: 'groupm_spotpak_sftp_filenames'
+
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/groupm_bigred_spotpak/sftp_datafiles'
+  local_datafile_regex_pattern: ''
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/groupm_bigred_spotpak/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/groupm_bigred_spotpak/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: '54.227.191.12'
+  remote_username: 'TargetOutboundFTP'
+  remote_file_path: '/TargetOutboundFTP/SpotPak'
+  remote_file_regex_pattern: ''
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'groupm'
+  sub_directory: ''
+
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'groupm_bigred_spotpak'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'groupm_bigred_spotpak_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/groupm_bigred_spotpak'
+
+criteo_bigred:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'criteo_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: '/apps/hive/warehouse/prd_mdf_lnd.db/criteo_sftp_filenames'
+  hdfs_sftp_filename: 'criteo_sftp_filenames'
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/criteo_bigred/sftp_datafiles'
+  local_datafile_regex_pattern: 'criteo|taxonomy_floors'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/criteo_bigred/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/criteo_bigred/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: 'data-sftp.criteo.com'
+  remote_username: 'top_1cb0fd9e-54da-4b9c-a783-95130bb46dd3'
+  remote_file_path: '/'
+  remote_file_regex_pattern: 'criteo|taxonomy_floors'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'top_1cb0fd9e-54da-4b9c-a783-95130bb46dd3'
+  sub_directory: ''
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'criteo_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'criteo_bigred_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/criteo_bigred'
+
+
+twitter_sftp_bigred3:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/user/SVMDEDMP/hive/prd_mdf_lzn.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'twitter_sftp_bigred3'
+  edge_node: 'edge.bigred3.target.com'
+  platform: 'bigred3'
+  hdfs_sftp_filepath: '/user/SVMDEDMP/hive/prd_mdf_lzn.db/twitter_sftp_filenames'
+  hdfs_sftp_filename: 'twitter_sftp_filenames'
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/twitter_sftp_bigred3/sftp_datafiles'
+  local_datafile_regex_pattern: 'Twitter_mmo'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/twitter_sftp_bigred3/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/twitter_sftp_bigred3/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: '54.227.191.12'
+  remote_username: 'TargetOutboundFTP'
+  remote_file_path: '/TargetOutboundFTP/SocialData/TwitterMMO'
+  remote_file_regex_pattern: 'Twitter_mmo'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'twitter'
+  sub_directory: ''
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'twitter_sftp_bigred3'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred3'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/user/SVMDEDMP/hive/prd_mdf_lzn.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred3'
+
+  #log path related params
+
+  log_filename: 'twitter_sftp_bigred3_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/twitter_sftp_bigred3'
+
+snapchat_sftp_bigred3:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/user/SVMDEDMP/hive/prd_mdf_lzn.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'snapchat_sftp_bigred3'
+  edge_node: 'edge.bigred3.target.com'
+  platform: 'bigred3'
+  hdfs_sftp_filepath: '/user/SVMDEDMP/hive/prd_mdf_lzn.db/snapchat_sftp_filenames'
+  hdfs_sftp_filename: 'snapchat_sftp_filenames'
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/snapchat_sftp_bigred3/sftp_datafiles'
+  local_datafile_regex_pattern: 'Snapchat_mmo'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/snapchat_sftp_bigred3/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/snapchat_sftp_bigred3/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: '54.227.191.12'
+  remote_username: 'TargetOutboundFTP'
+  remote_file_path: '/TargetOutboundFTP/SocialData/SnapchatMMO'
+  remote_file_regex_pattern: 'Snapchat_mmo'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'twitter'
+  sub_directory: ''
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'snapchat_sftp_bigred3'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred3'
+  btch_exec_stat_ingestion_hdfs_dest_file_path: '/user/SVMDEDMP/hive/prd_mdf_lzn.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred3'
+
+  #log path related params
+
+  log_filename: 'snapchat_sftp_bigred3_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/snapchat_sftp_bigred3'
+
+criteo_hist1_bigred:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'criteo_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: ''
+  hdfs_sftp_filename: ''
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/criteo_bigred/sftp_datafiles'
+  local_datafile_regex_pattern: 'criteo|taxonomy_floors'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/criteo_bigred/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/criteo_bigred/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: 'data-sftp.criteo.com'
+  remote_username: 'top_1cb0fd9e-54da-4b9c-a783-95130bb46dd3'
+  remote_file_path: '/2021_advertiser_category_dly_0611_0714'
+  remote_file_regex_pattern: 'criteo|taxonomy_floors'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'top_1cb0fd9e-54da-4b9c-a783-95130bb46dd3'
+  sub_directory: ''
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'criteo_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'criteo_bigred_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/criteo_bigred'
+
+criteo_hist2_bigred:
+  #xenon related params
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/apps/hive/warehouse/prd_mdf_lnd.db'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'criteo_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: ''
+  hdfs_sftp_filename: ''
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/criteo_bigred/sftp_datafiles'
+  local_datafile_regex_pattern: 'criteo|taxonomy_floors'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/criteo_bigred/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/criteo_bigred/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: 'data-sftp.criteo.com'
+  remote_username: 'top_1cb0fd9e-54da-4b9c-a783-95130bb46dd3'
+  remote_file_path: '/2021_category_dly_0611_0714'
+  remote_file_regex_pattern: 'criteo|taxonomy_floors'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'top_1cb0fd9e-54da-4b9c-a783-95130bb46dd3'
+  sub_directory: ''
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'criteo_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/apps/hive/warehouse/prd_mdf_lnd.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'criteo_bigred_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/criteo_bigred'
+
+
+criteo_bigred3:
+  #xenon related params
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/user/SVMDEDMP/hive/criteo'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'criteo_bigred3'
+  edge_node: 'edge.bigred3.target.com'
+  platform: 'bigred3'
+  hdfs_sftp_filepath: '/user/SVMDEDMP/hive/criteo/criteo_sftp_filenames'
+  hdfs_sftp_filename: 'criteo_sftp_filenames'
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/criteo_bigred3/sftp_datafiles'
+  local_datafile_regex_pattern: 'criteo|taxonomy_floors'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/datafile/criteo_bigred3/sftp_filenames'
+  local_hdfs_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp/criteo_bigred3/sftp_filenames'
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework/temp'
+
+
+  #remote server related params
+
+  remote_host: 'data-sftp.criteo.com'
+  remote_username: 'top_1cb0fd9e-54da-4b9c-a783-95130bb46dd3'
+  remote_file_path: '/'
+  remote_file_regex_pattern: 'criteo|taxonomy_floors'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: 'Y'
+  remote_user: 'top_1cb0fd9e-54da-4b9c-a783-95130bb46dd3'
+  sub_directory: ''
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'criteo_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/btch_exec_stat_bigred3'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/user/SVMDEDMP/hive/prd_mdf_lzn.db/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred3'
+
+  #log path related params
+
+  log_filename: 'criteo_bigred3_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework/logs/criteo_bigred3'
+

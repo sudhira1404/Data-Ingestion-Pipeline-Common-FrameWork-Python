@@ -1,0 +1,50 @@
+NSA_bigred:
+  #xenon related params'
+
+  xenon_url: "https://xenon.bigred3.target.com/xenon/fs"
+  xenon_user: 'svmdedmp'
+  hdfs_dest_datefile_path: '/common/MDF/data/temp'
+  hdfs_dest_ctrlfile_path: ''
+  put_params: {'mkdirs': 'true', 'overwrite': 'true'}
+  xenon_method: 'Y'
+  partition_date_method: 'nsa_bigred'
+  edge_node: 'edge.bigred.target.com'
+  platform: 'bigred'
+  hdfs_sftp_filepath: ''
+  hdfs_sftp_filename: ''
+
+  #Vmaas related params
+
+  local_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework_test/datafile/NSA_bigred/sftp_datafiles'
+  local_datafile_regex_pattern: 'nsa|circular'
+  local_ctrlfile_regex_pattern: ''
+  local_hdfs_sftp_file_path: ''
+  local_hdfs_sftp_temp_file_path: ''
+  local_sftp_temp_file_path: '/home/corp.target.com/svmdedmp/file_ingestion_framework_test/temp'
+
+
+  #remote server related params
+
+  remote_host: 'xyzmft.target.com'
+  remote_username: 'svbigred04'
+  remote_file_path: '/xnsa02/Inbox'
+  remote_file_regex_pattern: 'nsa|circular'
+  remote_ctrlfile_regex_pattern: ''
+  sftp_method: 'Y'
+  method: 'pysftp'
+  remote_passwordauth: ''
+  sub_directory: ''
+
+
+  #batch exec related params
+
+  btch_exec_stat_ingestion_job_n: 'NSA_bigred'
+  btch_exec_stat_ingestion_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework_test/btch_exec_stat_bigred'
+  btch_exec_stat_ingestion_hdfs_dest_file_path : '/common/MDF/data/temp/btch_exec_stat_ingestion'
+  btch_exec_stat_ingestion_put_params: {'mkdirs': 'true'}
+  btch_exec_stat_ingestion_partition_date_method: 'btch_exec_stat_bigred'
+
+  #log path related params
+
+  log_filename: 'NSA_bigred_'
+  log_filepath: '/home/corp.target.com/svmdedmp/file_ingestion_framework_test/logs/NSA_bigred'
